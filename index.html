@@ -10,6 +10,7 @@
      Keep it under about 60 characters and include your name, city, and service.
      ============================================================ -->
 <title>Shelby Wilson, LMFT-A | Fort Worth Therapist for Couples, Teens & Premarital Counseling</title>
+<link rel="icon" type="image/png" href="wwc_logo_plain.png">
 
 <!-- EDIT META DESCRIPTION HERE (the gray text under the title on Google, aim for 150-160 characters) -->
 <meta name="description" content="Shelby Wilson is an LMFT-Associate at Fort Worth Counseling and Intervention (FWCAI), offering therapy for adolescents, couples, and premarital counseling in Fort Worth, Aledo, Weatherford, Southwest Fort Worth, and Benbrook, Texas.">
@@ -136,7 +137,8 @@
   .nav-inner{
     max-width:1140px; margin:0 auto;
     display:flex; align-items:center; justify-content:space-between;
-    padding:18px 24px;
+    padding:14px 24px;
+    gap: 16px;
   }
   .brand{
     font-family:var(--font-display);
@@ -146,6 +148,19 @@
     text-decoration:none;
   }
   .brand span{ color:var(--clay-dark); }
+  .logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  }
+
+.header-logo {
+  height: 50px; /* Adjust this number to make the center logo larger or smaller */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  }
   nav.links{ display:flex; align-items:center; gap:28px; }
   nav.links a{
     text-decoration:none;
@@ -377,6 +392,9 @@
   <div class="nav-inner">
     <!-- EDIT PRACTICE NAME / LOGO TEXT HERE -->
     <a href="#home" class="brand">Shelby Wilson <span>LMFT-A</span></a>
+    <a href="#home" class="logo-link">
+      <img src="wwc_logo_text.png" alt="Wilson Wellness Collective Logo" class="header-logo">
+    </a>
     <nav class="links">
       <a href="#about">About</a>
       <a href="#specialties">Specialties</a>
