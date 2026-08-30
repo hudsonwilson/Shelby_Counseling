@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+     SEO SETTINGS — EDIT PAGE TITLE HERE
+     This is the blue clickable text people see on Google.
+     Keep it under about 60 characters and include your name, city, and service.
+     ============================================================ -->
+<title>Shelby Wilson, LMFT-A | Fort Worth Therapist for Couples, Teens & Premarital Counseling</title>
+
+<!-- EDIT META DESCRIPTION HERE (the gray text under the title on Google, aim for 150-160 characters) -->
+<meta name="description" content="Shelby Wilson is an LMFT-Associate at Fort Worth Counseling and Intervention (FWCAI), offering therapy for adolescents, couples, and premarital counseling in Fort Worth, Aledo, Weatherford, Southwest Fort Worth, and Benbrook, Texas.">
+
+<!-- EDIT SEO KEYWORDS HERE (less important to Google today, but harmless to include) -->
+<meta name="keywords" content="Fort Worth therapist, couples counseling Fort Worth, adolescent therapist FWCAI, premarital counseling Fort Worth, Fort Worth Counseling and Intervention, LMFT Associate Texas, Aledo therapist, Aledo premarital counseling, Aledo adolescent counseling, Benbrook therapist, Benbrook premarital counseling, Benbrook adolescent counseling, Weatherford therapist, Weatherford couples counseling, Weatherford premarital counseling, Southwest Fort Worth therapist, Southwest Fort Worth counseling, Christian counseling Fort Worth, Christian marriage counseling Fort Worth, faith based therapist Fort Worth, Fort Worth Bible church counselor, Christian premarital counseling Fort Worth, Christian adolescent counseling, Christian couples counseling Texas">
+
+<meta name="author" content="Shelby Wilson, LMFT-A">
+<meta name="robots" content="index, follow">
+
+<!-- EDIT SOCIAL PREVIEW TEXT HERE (this shows up when the link is shared on Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Shelby Wilson, LMFT-A | Fort Worth Therapist for Couples, Teens & Premarital Counseling">
+<meta property="og:description" content="Therapy for adolescents, couples, and engaged partners in Fort Worth, Texas at Fort Worth Counseling and Intervention (FWCAI). Serving Fort Worth, Aledo, Weatherford, Southwest Fort Worth, and Benbrook.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="shelby_headshot_far.jpeg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     DESIGN TOKENS — color & type system
+     If you want to change colors site-wide, edit the values below.
+     ============================================================ */
+  :root{
+    --bg:            #FAF6EF; /* warm off-white page background */
+    --sage:           #8FA07C; /* primary sage green */
+    --sage-dark:      #46573F; /* deep sage, used for headings & nav */
+    --sage-pale:      #E7EBDC; /* pale sage, card backgrounds */
+    --clay:           #BD7F4E; /* warm honey-clay accent, buttons */
+    --clay-dark:      #A2683B; /* clay hover state */
+    --cream-card:     #F3EBDC; /* warm neutral card background */
+    --text:           #3B372E; /* warm charcoal-brown body text */
+    --text-soft:      #6B6558; /* muted secondary text */
+    --white:          #FFFFFF;
+    --shadow-sm:      0 1px 3px rgba(70,87,63,0.06);
+    --shadow:         0 12px 32px rgba(70,87,63,0.10);
+    --radius-lg:      28px;
+    --radius-md:      18px;
+    --font-display:   'Fraunces', Georgia, serif;
+    --font-body:      'Karla', 'Segoe UI', sans-serif;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{ max-width:100%; display:block; }
+  a{ color:inherit; }
+  section{ padding: 96px 24px; }
+  .wrap{ max-width:1140px; margin:0 auto; }
+
+  h1,h2,h3{
+    font-family:var(--font-display);
+    color:var(--sage-dark);
+    margin:0 0 20px 0;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  h1{ font-size:clamp(2.4rem, 5vw, 3.8rem); line-height:1.08; font-weight:500; }
+  h2{ font-size:clamp(1.9rem, 3.4vw, 2.6rem); }
+  h3{ font-size:1.35rem; margin-bottom:10px; }
+  p{ margin:0 0 16px 0; color:var(--text); }
+  .eyebrow{
+    display:inline-block;
+    font-family:var(--font-body);
+    font-size:0.78rem;
+    font-weight:700;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--clay-dark);
+    margin-bottom:14px;
+  }
+
+  /* -------------------- Buttons -------------------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:16px 34px;
+    border-radius:999px;
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:1rem;
+    text-decoration:none;
+    cursor:pointer;
+    border:none;
+    transition:transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  }
+  .btn:focus-visible{ outline:3px solid var(--sage-dark); outline-offset:3px; }
+  .btn-primary{
+    background:var(--clay);
+    color:var(--white);
+    box-shadow: 0 8px 22px rgba(189,127,78,0.35);
+  }
+  .btn-primary:hover{ background:var(--clay-dark); transform:translateY(-2px); }
+  .btn-outline{
+    background:var(--sage-pale);
+    color:var(--sage-dark);
+  }
+  .btn-outline:hover{ background:var(--sage-dark); color:var(--white); transform:translateY(-2px); }
+
+  /* -------------------- Nav -------------------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(250,246,239,0.9);
+    backdrop-filter:blur(8px);
+    box-shadow: var(--shadow-sm);
+  }
+  .nav-inner{
+    max-width:1140px; margin:0 auto;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 24px;
+  }
+  .brand{
+    font-family:var(--font-display);
+    font-size:1.3rem;
+    color:var(--sage-dark);
+    font-weight:600;
+    text-decoration:none;
+  }
+  .brand span{ color:var(--clay-dark); }
+  nav.links{ display:flex; align-items:center; gap:28px; }
+  nav.links a{
+    text-decoration:none;
+    font-weight:600;
+    font-size:0.95rem;
+    color:var(--sage-dark);
+  }
+  nav.links a.btn{ color:var(--white); }
+
+  @media (max-width: 760px){
+    nav.links a:not(.btn){ display:none; }
+  }
+
+  /* -------------------- Hero -------------------- */
+  .hero{
+    position:relative;
+    overflow:hidden;
+    padding: 88px 24px 60px;
+  }
+  .hero-inner{
+    max-width:1140px; margin:0 auto;
+    display:grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap:56px;
+    align-items:center;
+  }
+  .hero-copy .eyebrow{ margin-bottom:18px; }
+  .hero-copy p.lead{
+    font-size:1.15rem;
+    color:var(--text-soft);
+    max-width:52ch;
+    margin-bottom:34px;
+  }
+  .hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+  /* Hero portrait: swap in shelby_headshot_far.jpeg here */
+  .hero-portrait-wrap{
+    width:100%;
+    max-width:380px;
+    margin:0 auto;
+  }
+  .hero-portrait{
+    width:100%;
+    aspect-ratio: 4 / 5;
+    object-fit:cover;
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow);
+    background:var(--sage-pale); /* shows as a soft placeholder if the image file is missing */
+  }
+
+  /* Decorative "breathing circle" motif, now living in the About section */
+  .breathing-wrap{
+    position:relative;
+    width:100%;
+    aspect-ratio: 1 / 1;
+    max-width:340px;
+    margin:0 auto;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .breath-ring{
+    position:absolute;
+    border-radius:50%;
+    border:1.5px solid var(--sage);
+    opacity:0.55;
+  }
+  .breath-ring.r1{ width:100%; height:100%; animation: breathe 7s ease-in-out infinite; }
+  .breath-ring.r2{ width:78%; height:78%; animation: breathe 7s ease-in-out infinite 0.6s; border-color:var(--clay); }
+  .breath-ring.r3{ width:56%; height:56%; animation: breathe 7s ease-in-out infinite 1.2s; }
+  .breath-core{
+    position:relative;
+    width:42%; height:42%;
+    border-radius:50%;
+    background: radial-gradient(circle at 35% 30%, #fff, var(--sage-pale) 70%);
+    box-shadow: var(--shadow);
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    padding:20px;
+  }
+  .breath-core span{
+    font-family:var(--font-display);
+    font-style:italic;
+    color:var(--sage-dark);
+    font-size:0.95rem;
+    line-height:1.4;
+  }
+  @keyframes breathe{
+    0%,100%{ transform:scale(0.92); opacity:0.35; }
+    50%{ transform:scale(1.04); opacity:0.7; }
+  }
+
+  /* -------------------- Organic section divider -------------------- */
+  .divider{ line-height:0; margin-top:-2px; }
+  .divider svg{ width:100%; height:auto; display:block; }
+
+  /* -------------------- About -------------------- */
+  .about{ background:var(--sage-pale); }
+  .about-inner{
+    display:grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap:56px;
+    align-items:start;
+  }
+  .location-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--white);
+    border-radius:999px;
+    padding:10px 20px;
+    font-weight:700;
+    font-size:0.9rem;
+    color:var(--sage-dark);
+    margin-bottom:20px;
+    text-decoration:none;
+    box-shadow:var(--shadow-sm);
+    transition: box-shadow 0.18s ease, transform 0.18s ease;
+  }
+  .location-badge:hover{ box-shadow:var(--shadow); transform:translateY(-1px); }
+  .location-badge svg{ flex-shrink:0; }
+
+  /* -------------------- Specialties -------------------- */
+  .specialties{ background:var(--bg); }
+  .section-head{ max-width:640px; margin:0 auto 56px; text-align:center; }
+  .section-head p{ color:var(--text-soft); font-size:1.05rem; }
+  .card-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:28px;
+  }
+  .card{
+    background:var(--cream-card);
+    border-radius:var(--radius-md);
+    padding:36px 28px;
+    box-shadow:var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card:hover{ transform:translateY(-6px); box-shadow:var(--shadow); }
+  .card-icon{
+    width:52px; height:52px;
+    border-radius:16px;
+    background:var(--sage);
+    color:var(--white);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:20px;
+  }
+  .card p{ color:var(--text-soft); font-size:0.98rem; margin-bottom:0; }
+  .faith-note{
+    max-width:720px;
+    margin:48px auto 0;
+    text-align:center;
+    color:var(--text-soft);
+    font-size:0.98rem;
+  }
+
+  /* -------------------- Contact -------------------- */
+  .contact{ background:var(--sage-dark); color:var(--white); }
+  .contact h2, .contact h3{ color:var(--white); }
+  .contact .eyebrow{ color:#DDCBA8; }
+  .contact-inner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:48px;
+    align-items:start;
+  }
+  .contact p{ color:#E4E9DD; }
+  .contact-card{
+    background:rgba(255,255,255,0.07);
+    border-radius:var(--radius-md);
+    padding:32px;
+  }
+  .contact-row{
+    display:flex; align-items:center; gap:14px;
+    margin-bottom:18px;
+    font-weight:600;
+  }
+  .contact-row svg{ flex-shrink:0; color:#DDCBA8; }
+  .contact-row a{ text-decoration:underline; color:var(--white); }
+  .disclaimer{
+    margin-top:24px;
+    padding:18px 20px;
+    background:rgba(255,255,255,0.07);
+    border-radius:12px;
+    font-size:0.9rem;
+    color:#EDEDE4;
+  }
+  .price-note{
+    margin-top:16px;
+    font-size:0.92rem;
+    color:#D9E0CE;
+  }
+  .portal-btn{ width:100%; margin-top:6px; }
+
+  /* -------------------- Footer -------------------- */
+  footer{
+    background:#3A4735;
+    color:#CFD6C6;
+    padding:40px 24px 32px;
+    font-size:0.85rem;
+    line-height:1.7;
+  }
+  footer .wrap{ max-width:1140px; margin:0 auto; }
+  footer strong{ color:var(--white); }
+  footer .fine-print{
+    margin-top:22px;
+    color:#A9B39C;
+  }
+
+  /* -------------------- Responsive -------------------- */
+  @media (max-width: 900px){
+    .hero-inner, .about-inner, .contact-inner{
+      grid-template-columns: 1fr;
+    }
+    .breathing-wrap{ order:-1; margin:0 auto; }
+    .card-grid{ grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px){
+    section{ padding:64px 20px; }
+    .hero{ padding-top:64px; }
+    .btn{ padding:14px 26px; font-size:0.95rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION BAR
+     ============================================================ -->
+<header class="site-nav">
+  <div class="nav-inner">
+    <!-- EDIT PRACTICE NAME / LOGO TEXT HERE -->
+    <a href="#home" class="brand">Shelby Wilson <span>LMFT-A</span></a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#specialties">Specialties</a>
+      <a href="#contact">Contact</a>
+      <!-- EDIT NAV BUTTON TEXT HERE -->
+      <a href="#contact" class="btn btn-primary">Book a Session</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <!-- EDIT EYEBROW TEXT HERE (small label above the headline) -->
+      <span class="eyebrow">Fort Worth, Texas · In-Person &amp; Telehealth</span>
+
+      <!-- EDIT HERO HEADLINE HERE -->
+      <h1>A steady, caring space to feel like yourself again.</h1>
+
+      <!-- EDIT HERO SUBHEADLINE HERE -->
+      <p class="lead">
+        I'm Shelby Wilson, a therapist in Fort Worth, Texas who works with
+        adolescents, couples, and engaged partners preparing for marriage.
+        I see clients at Fort Worth Counseling and Intervention (FWCAI), and
+        I'd love to walk alongside you, whatever season you're in.
+      </p>
+      <div class="hero-actions">
+        <!-- EDIT MAIN "BOOK A SESSION" BUTTON TEXT HERE -->
+        <a href="#contact" class="btn btn-primary">Book a Session</a>
+        <!-- EDIT SECONDARY BUTTON TEXT HERE -->
+        <a href="#specialties" class="btn btn-outline">See How I Can Help</a>
+      </div>
+    </div>
+
+    <!-- HEADSHOT PHOTO
+         This pulls "shelby_headshot_far.jpeg" from the same folder as this
+         HTML file on GitHub. If you rename the photo file, update the
+         src below to match the new file name exactly. -->
+    <div class="hero-portrait-wrap">
+      <!-- EDIT HEADSHOT FILE NAME / ALT TEXT HERE -->
+      <img class="hero-portrait" src="shelby_headshot_far.jpeg" alt="Shelby Wilson, LMFT-A, Fort Worth therapist">
+    </div>
+  </div>
+</section>
+
+<!-- Organic wave divider (decorative, no edits needed) -->
+<div class="divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,32 C240,80 480,0 720,24 C960,48 1200,88 1440,40 L1440,80 L0,80 Z" fill="#E7EBDC"></path></svg>
+</div>
+
+<!-- ============================================================
+     ABOUT SECTION
+     ============================================================ -->
+<section class="about" id="about">
+  <div class="wrap about-inner">
+
+    <!-- Decorative breathing-circle graphic (moved here from the hero, no text edits needed) -->
+    <div class="breathing-wrap" aria-hidden="true">
+      <div class="breath-ring r1"></div>
+      <div class="breath-ring r2"></div>
+      <div class="breath-ring r3"></div>
+      <div class="breath-core">
+        <!-- EDIT SMALL QUOTE INSIDE THE CIRCLE HERE -->
+        <span>"Breathe in. You're in the right place."</span>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <!-- EDIT ABOUT EYEBROW HERE -->
+      <span class="eyebrow">Meet Shelby</span>
+
+      <!-- EDIT ABOUT HEADLINE HERE -->
+      <h2>Hi, I'm Shelby Wilson, a Fort Worth therapist for teens, couples, and couples-to-be.</h2>
+
+      <!-- Location badge, links out to Google Maps for the FWCAI office -->
+      <!-- EDIT PRACTICE LOCATION BADGE TEXT HERE -->
+      <a class="location-badge" href="https://www.google.com/maps/search/?api=1&query=451+University+Dr%2C+Fort+Worth%2C+TX+76107" target="_blank" rel="noopener noreferrer">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-7.58 7-12a7 7 0 10-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Practicing at Fort Worth Counseling and Intervention (FWCAI)
+      </a>
+
+      <!-- EDIT BIO PARAGRAPH 1 HERE -->
+      <p>
+        As a Licensed Marriage and Family Therapist Associate (LMFT-A), I work
+        with adolescents navigating big feelings, couples trying to reconnect,
+        and partners preparing for marriage. My approach is warm and honest,
+        and I believe you already carry more strength than you realize. My job
+        is simply to help you find it.
+      </p>
+
+      <!-- EDIT BIO PARAGRAPH 2 HERE (faith mention, keep light and optional-sounding) -->
+      <p>
+        My own faith is a big part of who I am, and I'm always glad to bring a
+        Christian, faith-integrated perspective into our work together if
+        that's meaningful to you. I meet every client where they are, whether
+        faith is central to your life or simply not part of the conversation.
+      </p>
+
+      <!-- EDIT BIO PARAGRAPH 3 HERE (service area) -->
+      <p>
+        I see clients in person and via telehealth at Fort Worth Counseling
+        and Intervention (FWCAI), and I'm glad to work with families across
+        Fort Worth and the surrounding communities of Aledo, Weatherford,
+        Southwest Fort Worth, and Benbrook.
+      </p>
+
+      <!-- EDIT BIO PARAGRAPH 4 HERE (optional, delete if not needed) -->
+      <p>
+        I'm also continually training in evidence based, family systems
+        approaches, so the care you receive is both compassionate and
+        clinically sound.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true" style="transform:rotate(180deg);">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,32 C240,80 480,0 720,24 C960,48 1200,88 1440,40 L1440,80 L0,80 Z" fill="#E7EBDC"></path></svg>
+</div>
+
+<!-- ============================================================
+     SPECIALTIES SECTION
+     ============================================================ -->
+<section class="specialties" id="specialties">
+  <div class="wrap">
+    <div class="section-head">
+      <!-- EDIT SPECIALTIES EYEBROW HERE -->
+      <span class="eyebrow">How I Can Help</span>
+      <!-- EDIT SPECIALTIES HEADLINE HERE -->
+      <h2>Focused, caring support in three areas</h2>
+      <!-- EDIT SPECIALTIES INTRO PARAGRAPH HERE -->
+      <p>
+        Every family and relationship looks different. Here's where I focus
+        my training and attention as a Fort Worth therapist at FWCAI, serving
+        clients in Aledo, Weatherford, Southwest Fort Worth, Benbrook, and
+        beyond.
+      </p>
+    </div>
+
+    <div class="card-grid">
+
+      <!-- Specialty Card 1: Adolescents -->
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><path d="M12 3c-4 0-7 3-7 7 0 5 4 9 7 11 3-2 7-6 7-11 0-4-3-7-7-7z"/><path d="M12 21V9"/></svg>
+        </div>
+        <!-- EDIT CARD 1 TITLE HERE -->
+        <h3>Adolescent Therapy</h3>
+        <!-- EDIT CARD 1 DESCRIPTION HERE -->
+        <p>
+          I work with teens across Fort Worth, Aledo, and Benbrook on anxiety,
+          identity questions, school stress, and family conflict, meeting
+          young people where they actually are rather than where a textbook
+          says they should be.
+        </p>
+      </article>
+
+      <!-- Specialty Card 2: Couples -->
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><circle cx="9" cy="12" r="6"/><circle cx="15" cy="12" r="6"/></svg>
+        </div>
+        <!-- EDIT CARD 2 TITLE HERE -->
+        <h3>Couples Counseling</h3>
+        <!-- EDIT CARD 2 DESCRIPTION HERE -->
+        <p>
+          I help couples throughout Fort Worth and Weatherford rebuild trust,
+          communicate without escalating, and remember why they chose each
+          other in the first place.
+        </p>
+      </article>
+
+      <!-- Specialty Card 3: Premarital Counseling -->
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/></svg>
+        </div>
+        <!-- EDIT CARD 3 TITLE HERE -->
+        <h3>Premarital Counseling</h3>
+        <!-- EDIT CARD 3 DESCRIPTION HERE -->
+        <p>
+          I prepare engaged couples in Fort Worth, Aledo, and Southwest Fort
+          Worth for a strong start, covering communication, finances, family
+          expectations, and conflict habits before they settle in for good.
+        </p>
+      </article>
+
+    </div>
+
+    <!-- EDIT FAITH NOTE HERE (weaves in Christian counseling naturally) -->
+    <p class="faith-note">
+      Many of my Fort Worth clients ask about Christian counseling. If your
+      faith, whether it's rooted in a Fort Worth Bible church or another
+      tradition, is something you'd like woven into our work, I'm glad to
+      include it.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT SECTION
+     ============================================================ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-inner">
+    <div class="contact-copy">
+      <!-- EDIT CONTACT EYEBROW HERE -->
+      <span class="eyebrow">Get In Touch</span>
+      <!-- EDIT CONTACT HEADLINE HERE -->
+      <h2>Ready to reach out?</h2>
+      <!-- EDIT CONTACT INTRO PARAGRAPH HERE -->
+      <p>
+        Send me an email anytime. That's true whether you're ready to book a
+        session, have a question about pricing or availability, or just want
+        to know if we'd be a good fit. When you're ready to schedule, the
+        secure client portal below is the fastest way in.
+      </p>
+    </div>
+
+    <div class="contact-card">
+      <div class="contact-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <!-- EDIT EMAIL ADDRESS HERE -->
+        <a href="mailto:shelbyw@wilsonwellnesscollective.com">shelbyw@wilsonwellnesscollective.com</a>
+      </div>
+      <div class="contact-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-7.58 7-12a7 7 0 10-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <!-- EDIT PRACTICE ADDRESS/NAME HERE -->
+        <a href="https://www.google.com/maps/search/?api=1&query=451+University+Dr%2C+Fort+Worth%2C+TX+76107" target="_blank" rel="noopener noreferrer">Fort Worth Counseling and Intervention (FWCAI), 451 University Dr, Fort Worth, TX 76107</a>
+      </div>
+
+      <!-- EDIT PORTAL BUTTON LINK HERE — replace [SIMPLEPRACTICE_LINK_HERE] with the real client portal URL -->
+      <a href="[SIMPLEPRACTICE_LINK_HERE]" class="btn btn-primary portal-btn" target="_blank" rel="noopener noreferrer">
+        Access Secure Client Portal
+      </a>
+
+      <!-- EDIT PRICING/AVAILABILITY NOTE HERE -->
+      <p class="price-note">
+        Curious about session fees or my current availability? Just ask.
+        I'm happy to talk through it over email.
+      </p>
+
+      <!-- EDIT DISCLAIMER TEXT HERE (recommended: keep this notice, it protects both Shelby and her clients) -->
+      <div class="disclaimer">
+        <strong>Please note:</strong> standard email isn't encrypted, so
+        please avoid sending sensitive clinical information, crisis details,
+        or personal health information through email. For anything clinical,
+        please use the secure client portal above. If you're in crisis, call
+        or text 988, or go to your nearest emergency room.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER — LICENSING / COMPLIANCE NOTICE
+     ============================================================ -->
+<footer>
+  <div class="wrap">
+    <!-- EDIT FOOTER PRACTICE NAME LINE HERE -->
+    <p style="margin-bottom:6px;"><strong>Shelby Wilson, LMFT-Associate</strong> · Fort Worth Counseling and Intervention (FWCAI) · Fort Worth, Texas</p>
+
+    <!-- EDIT TEXAS STATE BOARD COMPLIANCE NOTICE HERE — required disclosure for LMFT-Associate status -->
+    <p>
+      Shelby Wilson is licensed as a Marriage and Family Therapist Associate
+      (LMFT-A) in the state of Texas and practices under supervision, in
+      accordance with the requirements of the Texas Behavioral Health
+      Executive Council. All clinical services are provided under
+      supervision.
+    </p>
+
+    <!-- EDIT SUPERVISOR NAME/LICENSE NUMBER HERE -->
+    <p>
+      <strong>Supervisor:</strong> Dana Lewin, LMFT-S, License #202557
+    </p>
+
+    <!-- EDIT COPYRIGHT LINE HERE -->
+    <p class="fine-print">
+      © 2026 Shelby Wilson, LMFT-A. Fort Worth Counseling and Intervention
+      (FWCAI). This website is for informational purposes only and does not
+      create a therapeutic relationship. If you're in crisis, call or text
+      988.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
